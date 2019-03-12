@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <link rel="stylesheet" type="text/css" href="style.css">
+        <title>XENA Events</title>
+    </head>
+    <body>
+        <header>
+           
+            <img src="./media/xena.png">
+            <h1  title="Hot ballon Riding Registation">Hot Ballon Riding Registation Form</h1>
+        </header>
+        <form action="register" method="get">
+        <table border="0">
+            <tr>
+                <td><label>Name</label></td><td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label>Age</label></td><td><input type="number" value="18" min="18" required></td>
+            </tr>
+            <tr>
+                <td><label>Email</label></td><td><input type="email" id="email" size="30" required></td>
+            </tr>
+            <tr>
+                <td><label>City</label></td><td>
+                    <input list="venue" id="ice-cream-choice" name="ice-cream-choice" />
+                        <datalist id="venue">
+                            <option value="Bangalore">
+                            <option value="Rajkot">
+                            <option value="Vijag">
+                        </datalist>
+                    </td>
+                
+            </tr>
+             <tr>
+                <td colspan="2"><input type="submit" name="submit"></td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>

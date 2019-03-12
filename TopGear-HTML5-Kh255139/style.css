@@ -1,0 +1,26 @@
+body {
+   margin-top: 40px;
+    margin-left: 40px;
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+img{
+    text-align: bottom;
+}
+thead {
+    color:green;
+}
+tbody {
+    color:blue;
+}
+tfoot {
+    color:red;
+}
+table,th,td{
+    border:1px solid black;
+    width:300px;
+}

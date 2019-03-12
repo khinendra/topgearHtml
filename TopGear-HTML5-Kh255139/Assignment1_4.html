@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <script type="text/javascript">
+  window.onload = function () {
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+
+      title:{
+      text: "Agricultural Statistical Department of GOI - Bajra Yield Statistical Data"
+      },
+      axisX:{
+        title: "Year",
+		crosshair: {
+			enabled: true,
+			snapToDataPoint: true
+		}
+	},
+	axisY: {
+		title: "Yield in Lakh Tonnes",
+		crosshair: {
+			enabled: true
+		}
+	},
+       data: [
+      {
+        type: "line",
+
+        dataPoints: [
+        { label: 2001, y: 281 },
+        { label: 2002, y: 277 },
+        { label: 2003, y: 275 },
+        { label: 2004, y: 457 },
+        { label: 2005, y: 200 },
+        { label: 2006, y: 280 },
+        { label: 2007, y: 150 }
+        ]
+      }
+      ]
+    });
+
+    chart.render();
+  }
+  </script>
+ <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+<body>
+  <div id="chartContainer" style="height: 300px; width: 50%;">
+  </div>
+</body>
+</html>
